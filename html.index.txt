@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FF Battle Arena</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>🔥 FF Battle Arena 🔥</h1>
+    <p>Entry Fee: PKR 50 | Prize: PKR 2000</p>
+    <button onclick="showForm()">Join Match</button>
+
+    <div id="formSection" class="hidden">
+      <h2>Register for Match</h2>
+      <form id="registerForm">
+        <input type="text" id="name" placeholder="Full Name" required><br>
+        <input type="text" id="ffid" placeholder="Free Fire ID" required><br>
+        <select id="paymentMethod" required>
+          <option value="">Select Payment Method</option>
+          <option value="Easypaisa">Easypaisa</option>
+          <option value="JazzCash">JazzCash</option>
+        </select><br>
+        <input type="file" id="screenshot" required><br>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+
+    <div class="contact">
+      <h3>Contact Admin</h3>
+      <p>Easypaisa: 03366751193<br>JazzCash: 03706435686</p>
+      <a href="https://wa.me/923366751193" target="_blank">Join WhatsApp Group</a>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
